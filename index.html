@@ -1,0 +1,25 @@
+﻿<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>Unity WebGL Player | AKUlykken</title>
+    <link rel="shortcut icon" href="https://dl.dropboxusercontent.com/s/86xcpszcnntw8iy/favicon.ico?dl=0">
+    <link rel="stylesheet" href="https://dl.dropboxusercontent.com/s/hgaw2hyirndicjd/style.css">
+    <script src="https://dl.dropboxusercontent.com/s/wiroe3k5c6cp2yk/UnityProgress.js?dl=0"></script>
+    <script src="https://dl.dropboxusercontent.com/s/qftcy7bx6ny8wib/UnityLoader.js?dl=0"></script>
+    <script>
+      var unityInstance = UnityLoader.instantiate("unityContainer", "Build/test2.json", {onProgress: UnityProgress});
+    </script>
+  </head>
+  <body>
+    <div class="webgl-content">
+      <div id="unityContainer" style="width: 960px; height: 600px"></div>
+      <div class="footer">
+        <div class="webgl-logo"></div>
+        <div class="fullscreen" onclick="unityInstance.SetFullscreen(1)"></div>
+        <div class="title">AKUlykken</div>
+      </div>
+    </div>
+  </body>
+</html>
